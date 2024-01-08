@@ -10,7 +10,7 @@ const ProjectsCard = ({
   skills,
 }) => {
   return (
-    <div className="w-full lgl:w-3/4">
+    <div className="w-full md:px-20">
       <div className="w-full h-auto flex flex-col lgl:flex-row justify-between rounded-lg shadow-shadowOne p-4 bg-gradient-to-r from-[#1e2024] to-[#23272b]">
         <div className="w-full h-auto bg-gradient-to-r from-[#1e2024] to-[#23272b] p-2 flex flex-col lgl:flex-col gap-3 justify-center">
           <img
