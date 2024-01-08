@@ -10,7 +10,7 @@ const Hero = () => {
       <section className="relative md:min-h-[650px] min-h-[450px] bg-gradient-to-r from-[#34363be8] to-[#2f3133] w-full md:rounded-xl shadow-md">
         <div className="container">
           <Navbar sidebar={sidebar} setSidebar={setSidebar} />
-          <div className="md:min-h-[650px] sm:h- flex justify-center items-center pt-4">
+          <div className="md:min-h-[650px] sm:min-h-[450px] flex justify-center items-center pt-4">
             <div className="">
               <img
                 className="img-shadow relative z-[0] w-[530px] md:animate-updown sm:animate-updownS"
