@@ -26,6 +26,42 @@ module.exports = {
       boxShadow: {
         shadowOne: "10px 10px 19px #1c1e22, -10px -10px 19px #262a2e",
       },
+      keyframes: {
+        updown: {
+          '0%': {
+            transform: 'translateY(-20px)',
+          },
+          '50%': {
+            transform: 'translateY(20px)',
+          },
+          '100%': {
+            transform: 'translateY(-20px)',
+          },
+        },
+
+        updownSmall: {
+          '0%': {
+            transform: 'translateY(-10px)',
+          },
+          '50%': {
+            transform: 'translateY(10px)',
+          },
+          '100%': {
+            transform: 'translateY(-10px)',
+          },
+        },
+      },
+      animation: {
+        updown: 'updown 3s linear infinite',
+        updownS: 'updownSmall 3s linear infinite',
+      },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "1rem",
+          sm: "2rem",
+        },
+      },
     },
   },
   plugins: [],
