@@ -1,6 +1,6 @@
 import React from "react";
-import Project from "./components/Projects/Project";
 import Banner from "./components/Banner/Banner";
+import Project from "./components/Projects/Project";
 
 function App() {
   return (

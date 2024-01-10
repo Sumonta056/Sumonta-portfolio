@@ -1,16 +1,15 @@
 import React from "react";
 import DPImage from "./assets/dp.png";
-import Navbar from "./Navbar";
 import { Typewriter } from "react-simple-typewriter";
+import Navbar from "../Navbar/Navbar";
 
-const Hero = () => {
-  const [sidebar, setSidebar] = React.useState(false);
+const Banner = () => {
   return (
     <main className="md:px-12 md:py-12 bg-bodyColor">
       <section className="relative md:min-h-[650px] min-h-[450px] bg-gradient-to-r from-[#34363be8] to-[#2f3133] w-full md:rounded-xl shadow-md">
-        <div className="container">
-          <Navbar sidebar={sidebar} setSidebar={setSidebar} />
-          <div className="md:min-h-[650px] sm:min-h-[450px] flex justify-center items-center pt-4">
+        <div className="">
+          <Navbar/>
+          <div className="md:min-h-[650px] sm:min-h-[450px] flex justify-center pt-4">
             <div className="">
               <img
                 className="img-shadow relative z-[0] w-[530px] md:animate-updown sm:animate-updownS"
@@ -37,4 +36,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Banner;

@@ -1,35 +1,53 @@
 import React from "react";
+import "./Mobile.css";
 
-
-const Navbar = ({ sidebar, setSidebar }) => {
-  function handleButtonClick() {
-    window.location.href = "https://sumonta056.github.io/";
-  }
+const MobileNav = ({ isOpen, toggleMenu }) => {
   return (
-    <div className="absolute top-0 left-0 w-full py-6 text-white z-20">
-      <div className="container">
-        <div className="flex justify-between items-center">
+    <div>
+      <div
+        className={`mobile-menu ${isOpen ? "active" : ""}`}
+        onClick={toggleMenu}
+      >
+        <div className="mobile-menu-container">
           <h1 className="md:text-2xl text-xl font-bold uppercase text-yellow-400">
             @
             <span className="font-normal md:text-xl text-sm text-white">
               Sumonta056
             </span>
           </h1>
-          <ul className="space-x-10 text-xl hidden lg:flex">
-            <li>Home</li>
-            <li>Projects</li>
-            <li>Achievement</li>
-            {/* <li>About</li> */}
-            <li>Photography</li>
-            <li>Blogs</li>
-            <li>Contact</li>
-          </ul>
-          <div className="sm:invisible md:visible">
-            <button
-              type="button"
-              class="text-gray-900 gap-2 bg-[#F7BE38] hover:bg-[#F7BE38]/90 focus:ring-4 focus:outline-none focus:ring-[#F7BE38]/50 font-medium rounded-lg text-base sm:text-sm sm:px-3 sm:py-1 lgl:px-5 lgl:py-2.5 text-center inline-flex items-center dark:focus:ring-[#F7BE38]/50"
-              onClick={handleButtonClick}
-            >
+          <ul>
+            <li>
+              <a className="menu-item" href="#valid">
+                Home
+              </a>
+            </li>
+            <li>
+              <a className="menu-item" href="#valid">
+                Project
+              </a>
+            </li>
+            <li>
+              <a className="menu-item" href="#valid">
+                Achievement
+              </a>
+            </li>
+            <li>
+              <a className="menu-item" href="#valid">
+                Photography
+              </a>
+            </li>
+            <li>
+              <a className="menu-item" href="#valid">
+                Blogs
+              </a>
+            </li>
+            <li>
+              <a className="menu-item" href="#valid">
+                Contact Me
+              </a>
+            </li>
+
+            <button className="contact-btn">
               <svg
                 width="24"
                 height="24"
@@ -46,13 +64,11 @@ const Navbar = ({ sidebar, setSidebar }) => {
               </svg>
               Old Portfolio
             </button>
-          </div>
-
-        
+          </ul>
         </div>
       </div>
     </div>
   );
 };
 
-export default Navbar;
+export default MobileNav;
