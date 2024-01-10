@@ -10,12 +10,20 @@ const Navbar = () => {
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
   };
+
+  const handleButton = () => {
+    window.location.herf = "https://sumonta056.github.io/"
+  };
+
+  const handleSumonta = () => {
+    window.location.herf = "https://github.com/Sumonta056"
+  };
   return (
     <div>
       <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
       <nav className="nav-wrapper">
         <div className="nav-content">
-          <h1 className="md:text-2xl text-xl font-bold uppercase text-yellow-400">
+          <h1 className="md:text-2xl text-xl font-bold uppercase text-yellow-400" onClick={handleSumonta}>
             @
             <span className="font-normal md:text-xl text-sm text-white">
               Sumonta056
@@ -54,7 +62,7 @@ const Navbar = () => {
               </a>
             </li>
 
-            <button className="contact-btn">
+            <button className="contact-btn" onClick={handleButton}>
               <svg
                 width="24"
                 height="24"
