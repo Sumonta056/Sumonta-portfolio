@@ -62,13 +62,13 @@ const ProjectsCard = ({
             </button>
           </div>
         </div>
-        <div className="w-full h-auto bg-gradient-to-r from-[#1e2024] to-[#23272b] p-6 lgl:p-10 flex flex-col justify-center gap-4 lgl:gap-8">
+        <div className="w-full h-auto bg-gradient-to-r from-[#1e2024] to-[#23272b] md:p-6 lgl:p-10 flex flex-col justify-center gap-4 lgl:gap-8">
           <div className="flex flex-col justify-center lgl:items-center py-2 lgl:py-6 border-b-2 border-b-gray-900">
             <div className="flex flex-col justify-center lgl:items-center">
-              <h3 className="text-medium lgl:text-2xl font-bold  text-center">
+              <h3 className="text-base lgl:text-2xl font-bold  text-center">
                 {projectName}
               </h3>
-              <p className="text-base text-designColor mt-3 text-center">
+              <p className="text-sm md:text-base text-designColor mt-3 text-center">
                 {date}
               </p>
               <div className="flex flex-wrap gap-2 mt-4 justify-center">
