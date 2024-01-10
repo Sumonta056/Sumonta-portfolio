@@ -27,10 +27,15 @@
   margin: 0 1.5rem;
 }
 
+
+
+
+
+
+
 .Nav-center-2 {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -145,6 +150,10 @@
     display: none;
   }
 
+  .Nav-center-2{
+    display: none;
+  }
+
   .nav-content {
     padding: 1 1.3rem;
   }
@@ -162,6 +171,10 @@
     display: none;
   }
 
+  .Nav-center-2{
+    display: none;
+  }
+
   .nav-content {
     padding: 1 1.3rem;
   }
@@ -174,4 +187,3 @@
   }
 
 }
-

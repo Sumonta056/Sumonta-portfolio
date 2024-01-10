@@ -11,25 +11,29 @@ const Navbar = () => {
     setOpenMenu(!openMenu);
   };
 
-  const handleButton = () => {
-    window.location.herf = "https://sumonta056.github.io/"
-  };
+  function handleButtonClick() {
+    window.location.href = "https://sumonta056.github.io/";
+  }
 
-  const handleSumonta = () => {
-    window.location.herf = "https://github.com/Sumonta056"
-  };
+  function handleButtonClick1() {
+    window.location.href = "https://github.com/Sumonta056";
+  }
+
   return (
     <div>
       <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
       <nav className="nav-wrapper">
         <div className="nav-content">
-          <h1 className="md:text-2xl text-xl font-bold uppercase text-yellow-400" onClick={handleSumonta}>
+          <h1
+            className="md:text-2xl text-xl font-bold uppercase group text-yellow-400 cursor-pointer animate-bounce"
+            onClick={handleButtonClick1}
+          >
             @
-            <span className="font-normal md:text-xl text-sm text-white">
+            <span className="font-normal md:text-xl text-sm text-white ">
               Sumonta056
             </span>
           </h1>
-
+    
           <ul>
             <li>
               <a className="menu-item" href="#valid">
@@ -47,7 +51,7 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a className="menu-item" href="#valid">
+              <a className="menu-item" href="https://mri-shot.vercel.app/">
                 Photography
               </a>
             </li>
@@ -61,8 +65,13 @@ const Navbar = () => {
                 Contact Me
               </a>
             </li>
-
-            <button className="contact-btn" onClick={handleButton}>
+          </ul>
+          <div className="Nav-center-2">
+            {" "}
+            <button
+              className="contact-btn animate-pulse"
+              onClick={handleButtonClick}
+            >
               <svg
                 width="24"
                 height="24"
@@ -79,8 +88,8 @@ const Navbar = () => {
               </svg>
               Old Portfolio
             </button>
-          </ul>
-
+          </div>
+      
           <button class="menu-btn" onClick={toggleMenu}>
             <span style={{ fontSize: "1.4rem", color: "black" }}>
               {openMenu ? <GiExpander /> : <GiHamburgerMenu />}
