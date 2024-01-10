@@ -78,7 +78,7 @@ const ProjectsCard = ({
               </div>
             </div>
           </div>
-          <p className="text-base text-justify  text-gray-400 font-normal">
+          <p className="text-sm md:text-base text-justify  text-gray-400 font-normal">
             {description}
           </p>
         </div>

@@ -42,7 +42,7 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
               </a>
             </li>
             <li>
-              <a className="menu-item" href="#valid">
+              <a className="menu-item" href="https://mri-shot.vercel.app/">
                 Photography
               </a>
             </li>
