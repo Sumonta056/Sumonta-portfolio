@@ -21,7 +21,7 @@ const ProjectsCard = ({
           <div className="w-full flex flex-row justify-center lgl:px-6 py-3 gap-4">
             <button
               type="button"
-              class="text-gray-900 bg-[#F7BE38] hover:bg-sky-500 focus:ring-4 focus:outline-none focus:ring-[#F7BE38]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#F7BE38]/50 me-2 mb-2 gap-2"
+              class="text-gray-900 bg-[#F7BE38] hover:bg-sky-500 focus:ring-4 focus:outline-none focus:ring-[#F7BE38]/50 font-medium rounded-lg text-sm px-2 md:px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#F7BE38]/50 me-2 mb-2 gap-2"
               onClick={demo}
             >
               <svg
@@ -42,7 +42,7 @@ const ProjectsCard = ({
             </button>
             <button
               type="button"
-              class="text-black bg-[#f8f8f8] hover:bg-sky-500 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 me-2 mb-2 gap-2"
+              class="text-black bg-[#f8f8f8] hover:bg-sky-500 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-2 md:px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 me-2 mb-2 gap-2 md:gap-2"
               onClick={github}
             >
               <svg
@@ -65,7 +65,7 @@ const ProjectsCard = ({
         <div className="w-full h-auto bg-gradient-to-r from-[#1e2024] to-[#23272b] p-6 lgl:p-10 flex flex-col justify-center gap-4 lgl:gap-8">
           <div className="flex flex-col justify-center lgl:items-center py-2 lgl:py-6 border-b-2 border-b-gray-900">
             <div className="flex flex-col justify-center lgl:items-center">
-              <h3 className="text-xl lgl:text-2xl font-bold  text-center">
+              <h3 className="text-medium lgl:text-2xl font-bold  text-center">
                 {projectName}
               </h3>
               <p className="text-base text-designColor mt-3 text-center">
@@ -78,7 +78,7 @@ const ProjectsCard = ({
               </div>
             </div>
           </div>
-          <p className="text-sm md:text-base text-justify  text-gray-400 font-normal">
+          <p className="text-base md:text-base text-justify  text-gray-400 font-normal">
             {description}
           </p>
         </div>
