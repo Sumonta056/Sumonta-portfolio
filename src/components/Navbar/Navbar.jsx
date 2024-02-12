@@ -25,15 +25,15 @@ const Navbar = () => {
       <nav className="nav-wrapper">
         <div className="nav-content">
           <h1
-            className="md:text-2xl text-xl font-bold uppercase group text-yellow-400 cursor-pointer animate-bounce"
+            className="text-xl font-bold text-yellow-400 uppercase cursor-pointer md:text-2xl group animate-bounce"
             onClick={handleButtonClick1}
           >
             @
-            <span className="font-normal md:text-xl text-sm text-white ">
+            <span className="text-sm font-normal text-white md:text-xl ">
               Sumonta056
             </span>
           </h1>
-    
+
           <ul>
             <li>
               <a className="menu-item" href="#valid">
@@ -89,7 +89,7 @@ const Navbar = () => {
               Old Portfolio
             </button>
           </div>
-      
+
           <button class="menu-btn" onClick={toggleMenu}>
             <span style={{ fontSize: "1.4rem", color: "black" }}>
               {openMenu ? <GiExpander /> : <GiHamburgerMenu />}
