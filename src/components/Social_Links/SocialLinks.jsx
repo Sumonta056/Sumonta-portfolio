@@ -85,7 +85,7 @@ function SocialLinks() {
   const linksToShow = isSmallScreen ? socialLinks.slice(0, 6) : socialLinks;
 
   return (
-    <div className="flex-col top-[14%] md:top-[23%] absolute left-0">
+    <div className="flex-col top-[11%] md:top-[23%] absolute left-0">
       <ul>
         {linksToShow.map(({ id, child, href }) => (
           <Fade delay={500}>
