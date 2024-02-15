@@ -4,15 +4,26 @@ import { Typewriter } from "react-simple-typewriter";
 import Navbar from "../Navbar/Navbar";
 import { Slide } from "react-awesome-reveal";
 import SocialLinks from "../Social_Links/SocialLinks";
+import { useMediaQuery } from "react-responsive";
 
 const Banner = () => {
+  const isSmallScreen = useMediaQuery({ query: "(max-width: 500px)" });
+
   return (
-    <main className="overflow-hidden md:px-12 md:py-6 bg-bodyColor">
+    <main className="md:px-12 md:py-6 bg-bodyColor">
       <section className="relative md:min-h-[650px] min-h-[450px] bg-gradient-to-r from-[#34363be8] to-[#2f3133] w-full md:rounded-xl shadow-md">
         <div className="">
-          <Slide direction="down" delay={300}>
-            <Navbar />
-          </Slide>
+          {isSmallScreen ? (
+            <>
+              <Navbar />
+            </>
+          ) : (
+            <>
+              <Slide direction="down" delay={300}>
+                <Navbar />
+              </Slide>
+            </>
+          )}
           <div className="md:min-h-[600px] sm:min-h-[450px] flex justify-center pt-4">
             <Slide direction="up" delay={300}>
               <img

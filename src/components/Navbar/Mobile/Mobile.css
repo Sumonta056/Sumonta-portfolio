@@ -1,12 +1,12 @@
 .mobile-menu {
+    z-index: 50 !important;
     width: 100vw;
     height: 100vh;
     display: none;
     background-color: rgba(0, 0, 0, 0.3);
-    position: fixed;
+    position: fixed !important;
     left: 0;
     top: 0;
-    z-index: 999 !important;
     opacity: 0;
     box-shadow: 0px 29px 80px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;

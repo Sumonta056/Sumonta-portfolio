@@ -10,7 +10,7 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
     window.location.href = "https://github.com/Sumonta056";
   }
   return (
-    <div>
+    <div className="z-50">
       <div
         className={`mobile-menu ${isOpen ? "active" : ""}`}
         onClick={toggleMenu}
