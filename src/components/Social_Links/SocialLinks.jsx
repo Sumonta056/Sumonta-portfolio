@@ -88,7 +88,7 @@ function SocialLinks() {
     <div className="flex-col top-[14%] md:top-[23%] absolute left-0">
       <ul>
         {linksToShow.map(({ id, child, href }) => (
-          <Fade delay={300}>
+          <Fade delay={500}>
             <li
               key={id}
               className="flex items-center rounded justify-center mb-2 w-56 px-8 pr-4 bg-zinc-600 text-2xl h-14 ml-[-160px] hover:ml-[-10px] hover:rounded-md duration-300 cursor-pointer"
