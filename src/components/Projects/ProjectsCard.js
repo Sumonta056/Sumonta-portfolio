@@ -1,5 +1,5 @@
 import React from "react";
-
+import BackgroundImage from "./assets/back.jpg";
 const ProjectsCard = ({
   image,
   projectName,
@@ -11,22 +11,22 @@ const ProjectsCard = ({
 }) => {
   return (
     <div className="w-full md:px-20">
-      <div className="w-full h-auto flex flex-col lgl:flex-row justify-between rounded-lg shadow-shadowOne p-4 bg-gradient-to-r from-[#1e2024] to-[#23272b]">
-        <div className="w-full h-auto bg-gradient-to-r from-[#1e2024] to-[#23272b] p-2 flex flex-col lgl:flex-col gap-3 justify-center">
+      <div className="flex flex-col justify-between w-full h-auto p-1 bg-gray-900 rounded-lg lgl:flex-row shadow-shadowOne">
+        <div className="w-full h-auto bg-gradient-to-r from-[#0d0e0f] to-[#131518] flex flex-col lgl:flex-col gap-3 justify-center">
           <img
-            className="h-72 lgl:h-80 rounded-lg object-cover overflow-hidden "
+            className="object-cover h-full overflow-hidden "
             src={image}
             alt="Loading"
           />
-          <div className="w-full flex flex-row justify-center lgl:px-6 py-3 gap-4">
+          <div className="absolute bottom-0 flex gap-2 py-3 lgl:px-6">
             <button
               type="button"
-              class="text-gray-900 bg-[#F7BE38] hover:bg-sky-500 focus:ring-4 focus:outline-none focus:ring-[#F7BE38]/50 font-medium rounded-lg text-sm px-2 md:px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#F7BE38]/50 me-2 mb-2 gap-2"
+              class="text-gray-900 bg-[#F7BE38] hover:bg-sky-500 focus:ring-4 focus:outline-none focus:ring-[#F7BE38]/50 font-medium rounded-lg text-sm px-2 md:px-3 py-2.5 text-center inline-flex items-center dark:focus:ring-[#F7BE38]/50 me-2 mb-2 gap-2"
               onClick={demo}
             >
               <svg
-                  width="24"
-                  height="24"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -38,11 +38,10 @@ const ProjectsCard = ({
                   fill="#000000"
                 />
               </svg>
-              Project Demo
             </button>
             <button
               type="button"
-              class="text-black bg-[#f8f8f8] hover:bg-sky-500 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-2 md:px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 me-2 mb-2 gap-2 md:gap-2"
+              class="text-black bg-[#f8f8f8] hover:bg-sky-500 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-2 md:px-4 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 me-2 mb-2 gap-2 md:gap-2"
               onClick={github}
             >
               <svg
@@ -58,27 +57,46 @@ const ProjectsCard = ({
                   clip-rule="evenodd"
                 />
               </svg>
-              Project Code
             </button>
           </div>
         </div>
-        <div className="w-full h-auto bg-gradient-to-r from-[#1e2024] to-[#23272b] md:p-6 lgl:p-10 flex flex-col justify-center gap-4 lgl:gap-8">
-          <div className="flex flex-col justify-center lgl:items-center py-2 lgl:py-6 border-b-2 border-b-gray-900">
+        <div
+          className="w-full h-auto bg-gradient-to-r from-[#1e2024] to-[#23272b] md:p-6 lgl:p-10 flex flex-col justify-center gap-4 lgl:gap-8"
+          style={{
+            position: "relative", // Ensure the div is positioned relative to the pseudo-element
+          }}
+        >
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              backgroundImage: `url(${BackgroundImage})`,
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              filter: "blur(3px)", // Apply blur to the pseudo-element
+              zIndex: 1, // Ensure the pseudo-element is behind the content
+            }}
+          />
+          <div className="z-10 flex flex-col justify-center border-b-2 lgl:items-center border-b-gray-900 md:pt-10">
             <div className="flex flex-col justify-center lgl:items-center">
-              <h3 className="text-base lgl:text-2xl font-bold  text-center">
+              <h3 className="text-base font-bold text-center text-gray-300 lgl:text-2xl">
                 {projectName}
               </h3>
-              <p className="text-sm md:text-base text-designColor mt-3 text-center">
+              <p className="mt-3 text-sm text-center md:text-base text-">
                 {date}
               </p>
-              <div className="flex flex-wrap gap-2 mt-4 justify-center">
+              <div className="flex flex-wrap justify-center gap-2 mt-4">
                 {skills.map((skill, index) => (
                   <div key={index}>{skill}</div>
                 ))}
               </div>
             </div>
           </div>
-          <p className="text-base md:text-base text-justify  text-gray-400 font-normal">
+          <p className="z-10 text-sm text-center px text-slate-200 md:pb-7">
             {description}
           </p>
         </div>

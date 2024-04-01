@@ -51,7 +51,7 @@ function App() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center w-full h-full gap-10 px-4 py-2 text-lightText">
+    <div className="flex flex-col items-center justify-center w-full h-full gap-4 px-4 py-2 text-lightText">
       <Slide delay={420}>
         <ProjectsCard
           image={Project1}

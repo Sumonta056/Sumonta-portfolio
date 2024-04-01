@@ -5,13 +5,24 @@ import Navbar from "../Navbar/Navbar";
 import { Slide } from "react-awesome-reveal";
 import SocialLinks from "../Social_Links/SocialLinks";
 import { useMediaQuery } from "react-responsive";
+import BackgroundImage from "./assets/20231121_161257.jpg";
 
 const Banner = () => {
   const isSmallScreen = useMediaQuery({ query: "(max-width: 500px)" });
 
   return (
     <main className="md:px-12 md:py-6 bg-bodyColor">
-      <section className="relative md:min-h-[650px] min-h-[450px] bg-gradient-to-r from-[#34363be8] to-[#2f3133] w-full md:rounded-xl shadow-md">
+      {/* <section className="relative md:min-h-[650px] min-h-[450px] bg-gradient-to-r from-[#34363be8] to-[#2f3133] w-full md:rounded-xl shadow-md">
+       */}
+      <section
+        className="relative md:min-h-[650px] min-h-[450px]  w-full md:rounded-xl shadow-md"
+        style={{
+          backgroundImage: `url(${BackgroundImage})`,
+          backgroundPosition: "center", // Centers the background image
+          backgroundRepeat: "no-repeat", // Prevents the background image from repeating
+          backgroundSize: "cover", // Makes the background image cover the entire container
+        }}
+      >
         <div className="">
           {isSmallScreen ? (
             <>
@@ -24,19 +35,19 @@ const Banner = () => {
               </Slide>
             </>
           )}
-          <div className="md:min-h-[600px] sm:min-h-[450px] flex justify-center pt-4">
+          <div className="md:min-h-[600px] sm:min-h-[450px] flex justify-end pt-4">
             <Slide direction="up" delay={300}>
-              <img
+              {/* <img
                 className="img-shadow relative z-[0] w-[530px] md:animate-updown sm:animate-updownS"
                 src={DPImage}
                 alt="mridul"
-              />
+              /> */}
             </Slide>
             <div className="md:hidden"></div>
           </div>
         </div>
         <Slide delay={400}>
-          <h1 className="text-center text-[70px] md:text-[140px] xl:text-[140px]  text-white uppercase font-bold absolute bottom-0 w-full z-3 text-shadow ">
+          <h1 className="text-center text-[70px] md:text-[100px]  text-white uppercase font-bold absolute bottom-0 w-full z-3 text-shadow ">
             <Typewriter
               words={["Hi! I am", "Sumonta", "Saha", "Mridul"]}
               loop={5}
