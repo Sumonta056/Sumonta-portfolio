@@ -1,11 +1,10 @@
 import React from "react";
-import DPImage from "./assets/dp.png";
 import { Typewriter } from "react-simple-typewriter";
 import Navbar from "../Navbar/Navbar";
 import { Slide } from "react-awesome-reveal";
 import SocialLinks from "../Social_Links/SocialLinks";
 import { useMediaQuery } from "react-responsive";
-import BackgroundImage from "./assets/20231121_161257.jpg";
+import BackgroundImage from "./assets/Cover.jpg";
 
 const Banner = () => {
   const isSmallScreen = useMediaQuery({ query: "(max-width: 500px)" });

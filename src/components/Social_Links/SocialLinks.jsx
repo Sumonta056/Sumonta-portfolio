@@ -75,7 +75,7 @@ function SocialLinks() {
       id: 7,
       child: (
         <>
-          YouTube <FaEnvelope size={35} />
+          Email <FaEnvelope size={35} />
         </>
       ),
       href: "mailto:sumontasaha80@gmail.com",

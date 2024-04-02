@@ -18,10 +18,16 @@ const ProjectsCard = ({
             src={image}
             alt="Loading"
           />
-          <div className="absolute bottom-0 flex gap-2 py-3 lgl:px-6">
+          <div
+            className="flex justify-center gap-2 py-3 lgl:px-6"
+            style={{
+              position: window.innerWidth < 768 ? "static" : "absolute", // Changes the positioning on small screens
+              bottom: 0,
+            }}
+          >
             <button
               type="button"
-              class="text-gray-900 bg-[#F7BE38] hover:bg-sky-500 focus:ring-4 focus:outline-none focus:ring-[#F7BE38]/50 font-medium rounded-lg text-sm px-2 md:px-3 py-2.5 text-center inline-flex items-center dark:focus:ring-[#F7BE38]/50 me-2 mb-2 gap-2"
+              class="text-gray-900 bg-[#F7BE38] hover:bg-sky-500 focus:ring-4 focus:outline-none focus:ring-[#F7BE38]/50 font-medium rounded-lg text-sm px-2 md:px-3 py-2.5 text-center inline-flex items-center dark:focus:ring-[#F7BE38]/50 me-2 mb-2 gap-1"
               onClick={demo}
             >
               <svg
@@ -38,10 +44,11 @@ const ProjectsCard = ({
                   fill="#000000"
                 />
               </svg>
+              {window.innerWidth < 768 && <span>Demo Link</span>}
             </button>
             <button
               type="button"
-              class="text-black bg-[#f8f8f8] hover:bg-sky-500 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-2 md:px-4 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 me-2 mb-2 gap-2 md:gap-2"
+              class="text-black bg-[#f8f8f8] hover:bg-sky-500 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-2 md:px-4 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 me-2 mb-2 gap-2"
               onClick={github}
             >
               <svg
@@ -57,11 +64,12 @@ const ProjectsCard = ({
                   clip-rule="evenodd"
                 />
               </svg>
+              {window.innerWidth < 768 && <span>GitHub Code</span>}
             </button>
           </div>
         </div>
         <div
-          className="w-full h-auto bg-gradient-to-r from-[#1e2024] to-[#23272b] md:p-6 lgl:p-10 flex flex-col justify-center gap-4 lgl:gap-8"
+          className="w-full h-auto bg-gradient-to-r from-[#1e2024] to-[#23272b] p-6 lgl:p-10 flex flex-col justify-center gap-4 lgl:gap-8"
           style={{
             position: "relative", // Ensure the div is positioned relative to the pseudo-element
           }}
@@ -96,7 +104,7 @@ const ProjectsCard = ({
               </div>
             </div>
           </div>
-          <p className="z-10 text-sm text-center px text-slate-200 md:pb-7">
+          <p className="z-10 text-xs text-center md:text-sm px text-slate-200 md:pb-7">
             {description}
           </p>
         </div>
