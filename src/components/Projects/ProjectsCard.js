@@ -91,10 +91,10 @@ const ProjectsCard = ({
           />
           <div className="z-10 flex flex-col justify-center border-b-2 lgl:items-center border-b-gray-900 md:pt-10">
             <div className="flex flex-col justify-center lgl:items-center">
-              <h3 className="text-base font-bold text-center text-gray-300 lgl:text-2xl">
+              <h3 className="text-base font-semibold text-center text-gray-200 md:text-3xl">
                 {projectName}
               </h3>
-              <p className="mt-3 text-sm text-center md:text-base text-">
+              <p className="mt-3 text-sm text-center md:text-base">
                 {date}
               </p>
               <div className="flex flex-wrap justify-center gap-2 mt-4">
@@ -104,9 +104,11 @@ const ProjectsCard = ({
               </div>
             </div>
           </div>
-          <p className="z-10 text-xs text-center md:text-sm px text-slate-200 md:pb-7">
-            {description}
-          </p>
+          {window.innerWidth > 768 && (
+            <p className="z-10 text-xs text-center md:text-sm px text-slate-200 md:pb-7">
+              {description}
+            </p>
+          )}
         </div>
       </div>
     </div>
