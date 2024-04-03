@@ -11,7 +11,7 @@ const ProjectsCard = ({
 }) => {
   return (
     <div className="w-full md:px-20">
-      <div className="flex flex-col justify-between w-full h-auto p-1 bg-gray-900 rounded-lg lgl:flex-row shadow-shadowOne">
+      <div className="flex flex-col justify-between w-full h-auto bg-gray-900 rounded-lg lgl:flex-row shadow-shadowOne shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]">
         <div className="w-full h-auto bg-gradient-to-r from-[#0d0e0f] to-[#131518] flex flex-col lgl:flex-col gap-3 justify-center">
           <img
             className="object-cover h-full overflow-hidden "
