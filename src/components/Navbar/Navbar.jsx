@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GiExpander } from "react-icons/gi";
 import MobileNav from "./Mobile/MobileNav";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -41,9 +42,17 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a className="menu-item" href="#valid">
+              <Link
+                activeClass="active"
+                className="menu-item"
+                to="project"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={800}
+              >
                 Project
-              </a>
+              </Link>
             </li>
             <li>
               <a className="menu-item" href="#valid">

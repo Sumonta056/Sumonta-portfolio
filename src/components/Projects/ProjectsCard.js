@@ -1,5 +1,4 @@
 import React from "react";
-// import BackgroundImage from "./assets/back.jpg";
 const ProjectsCard = ({
   image,
   projectName,

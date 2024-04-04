@@ -1,6 +1,6 @@
 import React from "react";
 import "./Mobile.css";
-
+import { Link } from "react-scroll";
 const MobileNav = ({ isOpen, toggleMenu }) => {
   function handleButtonClick() {
     window.location.href = "https://sumonta056.github.io/";
@@ -17,11 +17,11 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
       >
         <div className="mobile-menu-container">
           <h1
-            className="md:text-2xl text-xl font-bold uppercase text-yellow-400"
+            className="text-xl font-bold text-yellow-400 uppercase md:text-2xl"
             onClick={handleButtonClick1}
           >
             @
-            <span className="font-normal md:text-xl text-sm text-white">
+            <span className="text-sm font-normal text-white md:text-xl">
               Sumonta056
             </span>
           </h1>
@@ -32,9 +32,17 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
               </a>
             </li>
             <li>
-              <a className="menu-item" href="#valid">
+              <Link
+                activeClass="active"
+                className="menu-item"
+                to="project"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={800}
+              >
                 Project
-              </a>
+              </Link>
             </li>
             <li>
               <a className="menu-item" href="#valid">

@@ -1,11 +1,12 @@
 import React from "react";
 import ProjectsCard from "./ProjectsCard";
-import { Slide } from "react-awesome-reveal";
+import { Slide , Fade } from "react-awesome-reveal";
+import { FaRegLightbulb } from "react-icons/fa"; // Import the icon you want to use
 
 // Images Link
-import Project1 from "./assets/Project.png";
-import Project2 from "./assets/project2.png";
-import Project3 from "./assets/project3.png";
+import Project1 from "./assets/project1.jpg";
+import Project2 from "./assets/project2.jpg";
+import Project3 from "./assets/project3.jpg";
 // Images Link
 
 // SKills Link
@@ -52,6 +53,13 @@ function App() {
 
   return (
     <div className="flex flex-col items-center justify-center w-full h-full gap-4 px-4 py-2 text-lightText">
+      <Fade delay={420} direction="up">
+        <div className="relative flex items-center gap-2 mt-4 text-4xl font-bold text-center text-gray-200 md:mt-5 md:text-6xl">
+          <FaRegLightbulb className="text-yellow-400 animate-pulse" />
+          <h1>Projects</h1>
+        </div>
+      </Fade>
+      <div className="w-2/3 h-1 mb-3 bg-gray-200 animate-pulse md:w-1/2"></div>
       <Slide delay={420}>
         <ProjectsCard
           image={Project1}
