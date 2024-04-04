@@ -1,5 +1,5 @@
 import React from "react";
-import BackgroundImage from "./assets/back.jpg";
+// import BackgroundImage from "./assets/back.jpg";
 const ProjectsCard = ({
   image,
   projectName,
@@ -11,8 +11,8 @@ const ProjectsCard = ({
 }) => {
   return (
     <div className="w-full md:px-20">
-      <div className="flex flex-col justify-between w-full h-auto bg-gray-900 rounded-lg lgl:flex-row shadow-shadowOne shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]">
-        <div className="w-full h-auto bg-gradient-to-r from-[#0d0e0f] to-[#131518] flex flex-col lgl:flex-col gap-3 justify-center">
+      <div className="flex flex-col justify-between w-full h-auto rounded-lg lgl:flex-row shadow-shadowOne shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]">
+        <div className="flex flex-col justify-center w-full h-auto gap-3 lgl:flex-col">
           <img
             className="object-cover h-full overflow-hidden "
             src={image}
@@ -27,7 +27,7 @@ const ProjectsCard = ({
           >
             <button
               type="button"
-              class="text-gray-900 bg-[#F7BE38] hover:bg-sky-500 focus:ring-4 focus:outline-none focus:ring-[#F7BE38]/50 font-medium rounded-lg text-sm px-2 md:px-3 py-2.5 text-center inline-flex items-center dark:focus:ring-[#F7BE38]/50 me-2 mb-2 gap-1"
+              class="text-gray-900 bg-[#F7BE38] hover:bg-sky-500 focus:ring-4 focus:outline-none focus:ring-[#F7BE38]/50 font-medium rounded-lg text-sm px-3 md:px-3 py-2.5 text-center inline-flex items-center dark:focus:ring-[#F7BE38]/50 me-2 mb-2 gap-1"
               onClick={demo}
             >
               <svg
@@ -48,7 +48,7 @@ const ProjectsCard = ({
             </button>
             <button
               type="button"
-              class="text-black bg-[#f8f8f8] hover:bg-sky-500 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-2 md:px-4 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 me-2 mb-2 gap-2"
+              class="text-black bg-[#f8f8f8] hover:bg-sky-500 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-3 md:px-4 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 me-2 mb-2 gap-2"
               onClick={github}
             >
               <svg
@@ -69,34 +69,32 @@ const ProjectsCard = ({
           </div>
         </div>
         <div
-          className="w-full h-auto bg-gradient-to-r from-[#1e2024] to-[#23272b] p-6 lgl:p-10 flex flex-col justify-center gap-4 lgl:gap-8"
+          className="flex flex-col justify-center w-full h-auto p-1 md:p-10 md:gap-8"
           style={{
             position: "relative", // Ensure the div is positioned relative to the pseudo-element
           }}
         >
           <div
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              backgroundImage: `url(${BackgroundImage})`,
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-              filter: "blur(3px)", // Apply blur to the pseudo-element
-              zIndex: 1, // Ensure the pseudo-element is behind the content
-            }}
+          // style={{
+          //   position: "absolute",
+          //   top: 0,
+          //   left: 0,
+          //   right: 0,
+          //   bottom: 0,
+          //   backgroundImage: `url(${BackgroundImage})`,
+          //   backgroundPosition: "center",
+          //   backgroundRepeat: "no-repeat",
+          //   backgroundSize: "cover",
+          //   filter: "blur(3px)", // Apply blur to the pseudo-element
+          //   zIndex: 1, // Ensure the pseudo-element is behind the content
+          // }}
           />
-          <div className="z-10 flex flex-col justify-center border-b-2 lgl:items-center border-b-gray-900 md:pt-10">
+          <div className="z-10 flex flex-col justify-center lgl:items-center md:pt-10">
             <div className="flex flex-col justify-center lgl:items-center">
               <h3 className="text-base font-semibold text-center text-gray-200 md:text-3xl">
                 {projectName}
               </h3>
-              <p className="mt-3 text-sm text-center md:text-base">
-                {date}
-              </p>
+              <p className="mt-3 text-sm text-center md:text-base">{date}</p>
               <div className="flex flex-wrap justify-center gap-2 mt-4">
                 {skills.map((skill, index) => (
                   <div key={index}>{skill}</div>
