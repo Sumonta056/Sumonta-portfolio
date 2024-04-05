@@ -7,7 +7,6 @@ const Particle = lazy(() => import("./components/Particle"));
 const Project = lazy(() => import("./components/Projects/Project"));
 const Achievement = lazy(() => import("./components/Achivement/Index.jsx"));
 
-
 function App() {
   return (
     <div className="bg-bodyColor">

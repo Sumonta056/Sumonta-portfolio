@@ -4,7 +4,7 @@ import Navbar from "../Navbar/Navbar";
 import { Slide } from "react-awesome-reveal";
 import SocialLinks from "../Social_Links/SocialLinks";
 import { useMediaQuery } from "react-responsive";
-import BackgroundImage from "./assets/Cover.jpg";
+import BackgroundImage from "./assets/Cover1.jpg";
 
 const Banner = () => {
   const isSmallScreen = useMediaQuery({ query: "(max-width: 500px)" });
