@@ -4,6 +4,7 @@ import ScrollProgressBar from "react-scroll-progress-bar";
 import Banner from "./components/Banner/Banner";
 const Particle = lazy(() => import("./components/Particle"));
 const Project = lazy(() => import("./components/Projects/Project"));
+const Achievement = lazy(() => import("./components/Achivement/Index.jsx"));
 
 function App() {
   return (
@@ -18,13 +19,18 @@ function App() {
       <div id="project">
         <Project />
       </div>
+
+      <div id="achivement">
+        <Achievement />
+      </div>
+
       <ScrollUpButton
         ContainerClassName="ScrollUpButton__Container"
         style={{
           width: 50,
           height: 50,
           outline: "none",
-          backgroundColor: "#b2e7f7",
+          backgroundColor: "#d2f5ff",
           color: "#fff",
           fontSize: "20px",
           padding: "10px",
