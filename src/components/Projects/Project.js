@@ -127,7 +127,7 @@ function App() {
           <h1>Projects</h1>
         </div>
       </Fade>
-      <div className="w-2/3 h-1 mb-3 bg-gray-200 animate-pulse md:w-1/2"></div>
+      <div className="w-2/3 h-1 -mt-4 bg-gray-200 md:mb-3 animate-pulse md:w-1/2 md:-mt-1"></div>
 
       <Slide delay={420}>
         <ProjectsCard
