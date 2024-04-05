@@ -16,6 +16,7 @@ import Project9 from "./assets/project9.jpg";
 import Project10 from "./assets/project10.jpg";
 import Project11 from "./assets/project11.jpg";
 import Project12 from "./assets/project12.jpg";
+import Project13 from "./assets/project15.png";
 // Images Link
 
 // SKills Link
@@ -118,6 +119,11 @@ function App() {
     "express",
     "Academic",
   ]);
+  const projectSkills10 = createSkillsArray([
+    "Javascript",
+    "CSS",
+    "Academic",
+  ]);
 
   return (
     <div className="flex flex-col items-center justify-center w-full h-full gap-8 px-4 py-2 text-lightText">
@@ -171,7 +177,7 @@ function App() {
         <ProjectsCard
           image={Project6}
           projectName="📱 RENT IT 📱"
-          date="March 24, 2024 - March 31, 2024"
+          date="Dec 24, 2023 - Nov 31, 2023"
           github={() =>
             handleButtonClick("https://github.com/Sumonta056/Rent_IT-App")
           }
@@ -186,7 +192,7 @@ function App() {
         <ProjectsCard
           image={Project2}
           projectName="☁️ Atoms-Sense ☁️"
-          date="Aug 4, 2023 - Mar 30, 2024"
+          date="Nov 3, 2023 - Nov 4, 2023"
           github={() =>
             handleButtonClick(
               "https://github.com/Sumonta056/AtomSense-DU_ITVerse_Hackathon"
@@ -205,7 +211,7 @@ function App() {
         <ProjectsCard
           image={Project3}
           projectName="👶 KIDDO 👶"
-          date="Aug 4, 2023 - Mar 30, 2024"
+          date="Oct 14, 2023 - Oct 15, 2023"
           github={() =>
             handleButtonClick(
               "https://github.com/Sumonta056/Kiddo-LU-Hackathon"
@@ -224,7 +230,7 @@ function App() {
         <ProjectsCard
           image={Project7}
           projectName="📸 Mri-Shot 📸"
-          date="Aug 4, 2023 - Mar 30, 2024"
+          date="Jan 4, 2024 - Jan 14, 2024"
           github={() =>
             handleButtonClick("https://github.com/Sumonta056/Mri-Shot")
           }
@@ -250,7 +256,7 @@ function App() {
         <ProjectsCard
           image={Project8}
           projectName="🏃‍♀️ Survive IT Game 🏃‍♀️"
-          date="Aug 4, 2023 - Mar 30, 2024"
+          date="Mar 30, 2022 - Sept 30, 2022"
           github={() =>
             handleButtonClick("https://github.com/Sumonta056/Survive-IT")
           }
@@ -265,7 +271,7 @@ function App() {
         <ProjectsCard
           image={Project9}
           projectName="🥷 Survival of Warrior 🥷"
-          date="Aug 4, 2023 - Mar 30, 2024"
+          date="Aug 4, 2021 - Dec 30, 2021"
           github={() =>
             handleButtonClick(
               "https://github.com/Sumonta056/Survival-of-Warrior"
@@ -284,7 +290,7 @@ function App() {
         <ProjectsCard
           image={Project10}
           projectName="📝 Task-Mate 📝"
-          date="Aug 4, 2023 - Mar 30, 2024"
+          date="May 4, 2023 - Aug 30, 2023"
           github={() =>
             handleButtonClick("https://github.com/Sumonta056/Task-Mate")
           }
@@ -297,9 +303,24 @@ function App() {
 
       <Slide delay={420}>
         <ProjectsCard
+          image={Project13}
+          projectName="🦾 Personal Portfolio 🦾"
+          date="Jan 4, 2023 - Jul 30, 2023"
+          github={() =>
+            handleButtonClick("https://github.com/Sumonta056/sumonta056.github.io")
+          }
+          demo={() =>
+            handleButtonClick("https://sumonta056.github.io/")
+          }
+          skills={projectSkills10}
+        />
+      </Slide>
+
+      <Slide delay={420}>
+        <ProjectsCard
           image={Project11}
           projectName="👁️ DALL·E ভিশন 👁️"
-          date="Aug 4, 2023 - Mar 30, 2024"
+          date="Oct 20, 2023 - Oct 30, 2023"
           github={() =>
             handleButtonClick("https://github.com/Sumonta056/DALL-E-Vision")
           }
@@ -314,7 +335,7 @@ function App() {
         <ProjectsCard
           image={Project12}
           projectName="❓ GPT-Vai ❓"
-          date="Aug 4, 2023 - Mar 30, 2024"
+          date="Oct 20, 2023 - Oct 30, 2023"
           github={() =>
             handleButtonClick("https://github.com/Sumonta056/GPT-Vai")
           }

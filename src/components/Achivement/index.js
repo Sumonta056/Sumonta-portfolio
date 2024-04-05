@@ -8,6 +8,8 @@ import roadmap7 from "./assets/ach7.jpg";
 import roadmap8 from "./assets/ach8.jpg";
 import roadmap9 from "./assets/ach9.jpg";
 import roadmap10 from "./assets/ach10.jpg";
+import roadmap11 from "./assets/ach12.jpg";
+import roadmap12 from "./assets/ach13.jpg";
 
 export const roadmap = [
   {
@@ -80,7 +82,7 @@ export const roadmap = [
   },
   {
     id: "5",
-    title: " Top 50 in Code Samurai Hackathon 24, Dhaka University - 2024",
+    title: "Top 50 in Code Samurai Hackathon 24, Dhaka University - 2024",
     text: "Ranked among the top 50 out of 400+ teams in the Code Samurai Hackathon 2024 Hosted By Dhaka University.",
     date: "May 2023",
     status: "progress",
@@ -94,5 +96,21 @@ export const roadmap = [
     date: "May 2023",
     status: "progress",
     imageUrl: roadmap6,
+  },
+  {
+    id: "5",
+    title: "CGPA 4.00/4.00 in 6th Semester in Software Engineering, SUST",
+    text:  "Achieved a perfect CGPA of 4.00/4.00 in the 6th semester of my Software Engineering program, demonstrating academic excellence and dedication to my studies.",
+    date: "May 2023",
+    status: "progress",
+    imageUrl: roadmap11,
+  },
+  {
+    id: "5",
+    title: "2nd Price in Intra School Poster Presentation Competition, May 2015",
+    text: "Won 2nd price in Intra School Dewalika Competition host by Narayanganj Ideal School Theme was Pohela Boishak and Bangla Culture.",
+    date: "May 2023",
+    status: "progress",
+    imageUrl: roadmap12,
   },
 ];

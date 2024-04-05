@@ -34,7 +34,7 @@ const App = () => {
           value: "#fffff",
         },
       },
-      fpsLimit: 120,
+      fpsLimit: 60,
       interactivity: {
         events: {
           onClick: {
@@ -77,6 +77,9 @@ const App = () => {
           speed: 6,
           straight: false,
         },
+        collisions: {
+          enable: false,
+        },
         number: {
           density: {
             enable: true,
@@ -95,7 +98,7 @@ const App = () => {
       },
       detectRetina: true,
     }),
-    [],
+    []
   );
 
   if (init) {

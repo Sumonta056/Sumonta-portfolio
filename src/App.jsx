@@ -10,11 +10,7 @@ function App() {
   return (
     <div className="bg-bodyColor">
       <ScrollProgressBar bgcolor="#d8d2db" height="7px" />
-      <React.Suspense
-        fallback={<div className="z-10 bg-black">Loading...</div>}
-      >
-        <Particle />
-      </React.Suspense>
+      <Particle />
       <Banner />
       <div id="project">
         <Project />
@@ -30,7 +26,7 @@ function App() {
           width: 50,
           height: 50,
           outline: "none",
-          backgroundColor: "#d2f5ff",
+          backgroundColor: "#e6faff",
           color: "#fff",
           fontSize: "20px",
           padding: "10px",
