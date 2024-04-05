@@ -17,7 +17,8 @@ const Banner = () => {
         className="relative md:min-h-[650px] min-h-[450px]  w-full md:rounded-xl shadow-md"
         style={{
           backgroundImage: `url(${BackgroundImage})`,
-          backgroundPosition: window.innerWidth < 768 ? "left" : "center", // Shifts the background image to the left on small screens
+          backgroundPosition: "center", // Shifts the background image to the left on small screens
+          // backgroundPosition: window.innerWidth < 768 ? "left" : "center", 
           backgroundRepeat: "no-repeat", // Prevents the background image from repeating
           backgroundSize: "cover", // Makes the background image cover the entire container
         }}
