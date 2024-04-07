@@ -1,5 +1,5 @@
 import Section from "./Section";
-import { roadmap } from "./index";
+import { roadmap } from "./Data.js";
 import { grid } from "../../assets";
 import { Gradient } from "./Roadmap";
 import { Fade } from "react-awesome-reveal";

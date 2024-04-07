@@ -27,9 +27,17 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
           </h1>
           <ul>
             <li>
-              <a className="menu-item" href="#valid">
-                Home
-              </a>
+              <Link
+                activeClass="active"
+                className="menu-item"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={800}
+              >
+                About
+              </Link>
             </li>
             <li>
               <Link
@@ -63,9 +71,17 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
               </a>
             </li>
             <li>
-              <a className="menu-item" href="#valid">
-                Blogs
-              </a>
+              <Link
+                activeClass="active"
+                className="menu-item"
+                to="blog"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={800}
+              >
+                Blog
+              </Link>
             </li>
             <li>
               <a className="menu-item" href="#valid">

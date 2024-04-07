@@ -1,27 +1,29 @@
+import { FaBookOpen } from "react-icons/fa";
+
 export const homeAbout = [
   {
     id: 1,
-    cover: "https://img.icons8.com/dotty/80/000000/storytelling.png",
+    cover: <FaBookOpen size={60} />,
     title: "Full-Stack Web Developer",
-    desc: "Craft immersive digital experiences from front-end to back-end.",
+    desc: "Experienced in developing websites using React and other languages.",
   },
   {
-    id: 1,
-    cover: "https://img.icons8.com/ios/80/000000/diploma.png",
-    title: "Hackathon Specialists",
-    desc: "Join coding challenges, collaborate, and innovate to solve real-world problems.",
+    id: 2,
+    cover: <FaBookOpen size={60} />,
+    title: "Hackathon Enthusiast",
+    desc: "Love to explore new fields of software technology through hackathons to gain experience.",
   },
   {
-    id: 1,
-    cover: "https://img.icons8.com/ios/80/000000/athlete.png",
-    title: "Software Engineer Student",
-    desc: "Master coding, algorithms, and data structures for a rewarding career.",
+    id: 3,
+    cover: <FaBookOpen size={60} />,
+    title: "Software Engineering Student",
+    desc: "Currently studying in SWE, SUST with a CGPA of 3.83 out of 4 until the 6th semester.",
   },
   {
-    id: 1,
-    cover: "https://img.icons8.com/ios/80/000000/athlete.png",
-    title: "Blog Write & Photographer",
-    desc: "Master coding, algorithms, and data structures for a rewarding career.",
+    id: 4,
+    cover: <FaBookOpen size={60} />,
+    title: "Blogger and Photographer",
+    desc: "Occasionally write blogs on software-related topics on Medium and do casual photography.",
   },
 ];
 
