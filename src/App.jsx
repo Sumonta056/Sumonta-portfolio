@@ -9,6 +9,7 @@ const Project = lazy(() => import("./components/Projects/Project"));
 const Achievement = lazy(() => import("./components/Achivement/Index.jsx"));
 const Blog = lazy(() => import("./components/blog/Blog.jsx"));
 const About = lazy(() => import("./components/about/About.jsx"));
+const Footer = lazy(() => import("./components/common/footer/Footer.jsx"));
 
 function App() {
   return (
@@ -34,6 +35,8 @@ function App() {
       <div id="blog">
         <Blog />
       </div>
+
+      <Footer />
 
       <ScrollUpButton
         ContainerClassName="ScrollUpButton__Container"
