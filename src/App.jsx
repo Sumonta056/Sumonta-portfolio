@@ -45,8 +45,9 @@ function App() {
           color: "#fff",
           fontSize: "20px",
           padding: "10px",
+          animation: "color-change 2s infinite",
+          WebkitAnimation: "color-change 2s infinite", // for Safari compatibility
         }}
-       
       />
     </div>
   );

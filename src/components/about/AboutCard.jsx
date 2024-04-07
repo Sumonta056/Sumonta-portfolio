@@ -1,11 +1,11 @@
 import React from "react";
 import Heading from "../common/heading/Heading";
 import "./about.css";
-import { homeAbout } from "../Data";
 import Awrapper from "./Awrapper";
-import Me from "../Banner/assets/Cover1.jpg";
+import Me from "./assets/Me3.jpg";
 import { Fade, Slide } from "react-awesome-reveal";
 import { FaWpforms } from "react-icons/fa";
+import { homeAbout } from "../Data";
 
 const AboutCard = () => {
   return (
@@ -19,7 +19,7 @@ const AboutCard = () => {
             <Fade>
               <Heading
                 subtitle="Sumonta Saha Mridul"
-                title="Sotfware Engineer"
+                title="Software Engineer"
               />
             </Fade>
             <div className="mt-5">

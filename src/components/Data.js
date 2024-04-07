@@ -50,12 +50,12 @@ export const awrapper = [
     data: "99+",
     title: "GitHub Followers",
   },
-
   {
-    cover: <FaMedium />,
-    data: "53+",
-    title: "Medium Followers",
+    cover: <FaStar />,
+    data: "130+",
+    title: "GitHub Repo Stars",
   },
+
   {
     cover: <FaUnsplash />,
     data: "4100+",
@@ -77,10 +77,11 @@ export const awrapper = [
     data: "10+",
     title: "Competition Finalist",
   },
+
   {
-    cover: <FaStar />,
-    data: "130+",
-    title: "GitHub Repo Stars",
+    cover: <FaMedium />,
+    data: "53+",
+    title: "Medium Followers",
   },
   {
     cover: <FaEye />,
@@ -116,7 +117,7 @@ export const blog = [
     date: "MAR, 2023",
     com: "769 Views",
     title: "Basic Things About HTTP Cookies and How It Works",
-    desc: "An HTTP cookie (Web cookie) is a small piece of data that a server sends to a user’s web browser.",
+    desc: "An HTTP (Web) cookie is a small piece of data that a server sends to a user’s web browser.",
     cover: Blog3,
     link: "https://medium.com/p/1c1290f31f7b",
   },
@@ -125,7 +126,7 @@ export const blog = [
     type: "272 CLAPS",
     date: "APR, 2023",
     com: "548 Views",
-    title: "Learn “Flexbox” in CSS For Web Development",
+    title: "Learn “Flexbox” in CSS For Frontend Web Development",
     desc: "The justify-content property is used in CSS to align and distribute flex items along the main axis of container.",
     cover: Blog4,
     link: "https://medium.com/p/6ca1165c2a64",

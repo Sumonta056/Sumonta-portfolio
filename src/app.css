@@ -39,6 +39,12 @@ body {
     width: 50%;
 }
 
+@keyframes color-change {
+    0% { background-color: #46e7dadc; }
+    50% { background-color: #fff; }
+    100% { background-color: #46e7dadc; }
+  }
+
 /*------------global-----------*/
 #heading {
     text-align: center;
