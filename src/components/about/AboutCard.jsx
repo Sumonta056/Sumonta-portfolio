@@ -23,10 +23,10 @@ const AboutCard = () => {
                       <FaBookOpen className="text-5xl" size={60} />
                     </div>
                     <div>
-                      <h2 className="pl-2 mb-3 text-base font-semibold md:text-xl">
+                      <h2 className="pl-2 mb-3 text-base font-semibold lgl:text-xl">
                         {val.title}
                       </h2>
-                      <p className="pl-2 text-sm md:text-base">{val.desc}</p>
+                      <p className="pl-2 text-sm lgl:text-base">{val.desc}</p>
                     </div>
                   </div>
                 );

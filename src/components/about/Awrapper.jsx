@@ -5,16 +5,16 @@ import { FaGithub } from "react-icons/fa";
 const Awrapper = () => {
   return (
     <div className="w-full">
-      <div className="flex flex-wrap items-center justify-between awrapper">
+      <div className="grid1 awrapper">
         {awrapper.map((val) => {
           return (
-            <div className="flex justify-center pb-6 md:w-72">
-              <div>
-                <h1 className="flex gap-2 text-4xl font-semibold">
+            <div className="flex pb-6">
+              <div className="flex flex-col justify-center">
+                <h1 className="flex justify-center gap-2 text-4xl font-semibold">
                   <FaGithub />
                   {val.data}
                 </h1>
-                <h3 className="text-2xl text-teal2">{val.title}</h3>
+                <h3 className="flex justify-center text-2xl text-teal2">{val.title}</h3>
               </div>
             </div>
           );
