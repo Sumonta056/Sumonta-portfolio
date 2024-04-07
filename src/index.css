@@ -3,14 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer utilities {
-    .img-shadow {
-      filter: drop-shadow(40px 50px 25px #000000c7);
-    }
-    .text-shadow {
-      text-shadow: 4px 5px 5px #1128015b;
-    }
+  .img-shadow {
+    filter: drop-shadow(40px 50px 25px #000000c7);
   }
-  
+
+  .text-shadow {
+    text-shadow: 4px 5px 5px #1128015b;
+  }
+}

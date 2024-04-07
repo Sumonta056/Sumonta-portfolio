@@ -1,20 +1,22 @@
-import React, { lazy } from "react";
+import React, { lazy, Suspense } from "react";
 import { CircularProgress } from "@material-ui/core";
 import { TinyButton as ScrollUpButton } from "react-scroll-up-button";
 import ScrollProgressBar from "react-scroll-progress-bar";
 import Banner from "./components/Banner/Banner";
+import "./app.css";
 const Particle = lazy(() => import("./components/Particle"));
 const Project = lazy(() => import("./components/Projects/Project"));
 const Achievement = lazy(() => import("./components/Achivement/Index.jsx"));
+const Blog = lazy(() => import("./components/blog/Blog.jsx"));
 
 function App() {
   return (
     <div className="bg-bodyColor">
       <ScrollProgressBar bgcolor="#d8d2db" height="7px" />
       <Banner />
-      <React.Suspense fallback={<CircularProgress />}>
+      <Suspense fallback={<CircularProgress />}>
         <Particle />
-      </React.Suspense>
+      </Suspense>
 
       <div id="project">
         <Project />
@@ -24,6 +26,7 @@ function App() {
         <Achievement />
       </div>
 
+      <Blog />
       <ScrollUpButton
         ContainerClassName="ScrollUpButton__Container"
         style={{
