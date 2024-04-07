@@ -8,6 +8,7 @@ const Particle = lazy(() => import("./components/Particle"));
 const Project = lazy(() => import("./components/Projects/Project"));
 const Achievement = lazy(() => import("./components/Achivement/Index.jsx"));
 const Blog = lazy(() => import("./components/blog/Blog.jsx"));
+const About = lazy(() => import("./components/about/About.jsx"));
 
 function App() {
   return (
@@ -18,6 +19,10 @@ function App() {
         <Particle />
       </Suspense>
 
+      <div id="about">
+        <About />
+      </div>
+
       <div id="project">
         <Project />
       </div>
@@ -26,7 +31,10 @@ function App() {
         <Achievement />
       </div>
 
-      <Blog />
+      <div id="blog">
+        <Blog />
+      </div>
+
       <ScrollUpButton
         ContainerClassName="ScrollUpButton__Container"
         style={{

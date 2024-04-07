@@ -42,7 +42,7 @@ body {
 /*------------global-----------*/
 #heading {
     text-align: center;
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 #heading h3 {
@@ -54,8 +54,9 @@ body {
 
 #heading h1 {
     font-size: 45px;
-    margin: 20px 0;
+    margin: 10px 0;
     text-transform: capitalize;
+    color: white;
 }
 
 p {
@@ -98,6 +99,8 @@ p {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
+    justify-items: center; /* Horizontally center items */
+    align-items: center; /* Vertically center items */
 }
 
 .flex1 {
@@ -155,6 +158,25 @@ p {
     p {
         line-height: 22px;
         font-size: 18px;
+    }
+
+    #heading {
+        text-align: center;
+        padding: 0px 0;
+    }
+    
+    #heading h3 {
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #1eb2a6;
+        text-transform: uppercase;
+    }
+    
+    #heading h1 {
+        font-size: 25px;
+        margin: 20px 0;
+        color: #f8f8f8;
+        text-transform: capitalize;
     }
 }
 
