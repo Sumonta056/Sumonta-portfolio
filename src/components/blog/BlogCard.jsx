@@ -33,7 +33,12 @@ const BlogCard = () => {
               <h1>{val.title}</h1>
               <p className="mb-2">{val.desc}</p>
               <div className="flex justify-center mt-2 lg:mt-4">
-                <a href={val.link} target="_blank" rel="noopener noreferrer" className="w-full">
+                <a
+                  href={val.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full"
+                >
                   <button
                     type="button"
                     className="w-full justify-center text-white bg-[#24292F] hover:bg-[#295891]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#354168]/90 me-2 mb-2 gap-2"
