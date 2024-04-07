@@ -41,11 +41,12 @@ function App() {
           width: 50,
           height: 50,
           outline: "none",
-          backgroundColor: "#e6faff",
+          backgroundColor: "#46e7dadc",
           color: "#fff",
           fontSize: "20px",
           padding: "10px",
         }}
+       
       />
     </div>
   );

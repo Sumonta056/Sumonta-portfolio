@@ -10,6 +10,13 @@ import { FaInstagram } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
 
+import Blog1 from "./blog/assets/blog-1.webp";
+import Blog2 from "./blog/assets/blog-2.webp";
+import Blog3 from "./blog/assets/blog-3.webp";
+import Blog4 from "./blog/assets/blog-4.webp";
+import Blog5 from "./blog/assets/blog-5.webp";
+import Blog6 from "./blog/assets/blog-6.webp";
+
 export const homeAbout = [
   {
     id: 1,
@@ -66,7 +73,7 @@ export const awrapper = [
   },
 
   {
-    cover: <FaTrophy/>,
+    cover: <FaTrophy />,
     data: "10+",
     title: "Competition Finalist",
   },
@@ -85,56 +92,62 @@ export const awrapper = [
 export const blog = [
   {
     id: 1,
-    type: "10  Likes",
-    date: "JAN. 18, 2021",
-    com: "3 Views ",
-    title: "Build your Dream Software & Engineering Career",
-    desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-    cover: "../images/blog/b1.webp",
+    type: "541  Reads",
+    date: "APR, 2023",
+    com: "884 Views",
+    title: "Learn Factory Design Pattern with Example in Java",
+    desc: "A Factory Pattern says subclasses are responsible to create the instance of the class.",
+    cover: Blog1,
+    link: "https://medium.com/p/ba150444c8a7",
   },
   {
     id: 2,
-    type: "10  Likes",
-    date: "API. 25, 2022",
-    com: "5 Views ",
-    title: "Build your Dream Software & Engineering Career",
-    desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-    cover: "../images/blog/b2.webp",
+    type: "442 Reads",
+    date: "JUN, 2023",
+    com: "771 Views",
+    title: "The Power of the “Command Design Pattern” in Java",
+    desc: "The Command design pattern is a that provides a way to encapsulate a request as an object.",
+    cover: Blog2,
+    link: "https://medium.com/p/d2f42b0f9d1d",
   },
   {
     id: 3,
-    type: "4 Likes",
-    date: "MAY. 15, 2022",
-    com: "10 Views ",
-    title: "Build your Dream Software & Engineering Career",
-    desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-    cover: "../images/blog/b3.webp",
+    type: "376 Reads",
+    date: "MAR, 2023",
+    com: "769 Views",
+    title: "Basic Things About HTTP Cookies and How It Works",
+    desc: "An HTTP cookie (Web cookie) is a small piece of data that a server sends to a user’s web browser.",
+    cover: Blog3,
+    link: "https://medium.com/p/1c1290f31f7b",
   },
   {
     id: 4,
-    type: "10  Likes",
-    date: "JAN. 02, 2022",
-    com: "3 Views ",
-    title: "Build your Dream Software & Engineering Career",
-    desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-    cover: "../images/blog/b4.webp",
+    type: "272 CLAPS",
+    date: "APR, 2023",
+    com: "548 Views",
+    title: "Learn “Flexbox” in CSS For Web Development",
+    desc: "The justify-content property is used in CSS to align and distribute flex items along the main axis of container.",
+    cover: Blog4,
+    link: "https://medium.com/p/6ca1165c2a64",
   },
   {
     id: 5,
-    type: "10  Likes",
-    date: "DEC. 14, 2022",
-    com: "3 Views ",
-    title: "Build your Dream Software & Engineering Career",
-    desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-    cover: "../images/blog/b5.webp",
+    type: "202 Reads",
+    date: "MAR, 2023",
+    com: "409 Views",
+    title: "SOLID Principles: The Key to Writing Clean & Quality Code",
+    desc: "The SOLID principles are a set of five design principles that aim to help developers create software systems.",
+    cover: Blog5,
+    link: "https://medium.com/p/9a8f88ea0a8",
   },
   {
     id: 6,
-    type: "4 Likes",
-    date: "JAN. 18, 2021",
-    com: "12 Views ",
-    title: "Build your Dream Software & Engineering Career",
-    desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-    cover: "../images/blog/b6.webp",
+    type: "100 Claps",
+    date: "MAR, 2023",
+    com: "132 Views",
+    title: "First Hackathon Experience and Some Tips for Beginners",
+    desc: "I recently took part in the Brain Station 23 Hackathon at the Orbitax SUST SWE Technovent 2023, powered by DSi",
+    cover: Blog6,
+    link: "https://medium.com/p/945063ae8e66",
   },
 ];
