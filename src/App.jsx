@@ -12,6 +12,7 @@ const Blog = lazy(() => import("./components/blog/Blog.jsx"));
 const About = lazy(() => import("./components/about/About.jsx"));
 const Footer = lazy(() => import("./components/common/footer/Footer.jsx"));
 const Contact = lazy(() => import("./components/ContactMe/index.jsx"));
+const Image = lazy(() => import("./components/Swiper/Photo.jsx"));
 
 function App() {
   return (
@@ -36,6 +37,10 @@ function App() {
 
       <div id="blog">
         <Blog />
+      </div>
+
+      <div id="photo">
+        <Image />
       </div>
 
       <div id="contact">

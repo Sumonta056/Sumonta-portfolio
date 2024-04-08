@@ -22,7 +22,7 @@ const Blog = () => {
         <div className="container flex flex-col gap-4 pb-3 mt-3 md:flex-row">
           <button
             type="button"
-            className="inline-flex items-center justify-center w-full gap-3 px-5 py-3 font-medium text-center text-black bg-gray-200 rounded-lg nd:text-xl hover:bg-blue-400 focus:ring-4 focus:outline-none focus:ring-blue-300"
+            className="inline-flex items-center justify-center w-full gap-3 px-5 py-3 font-medium text-center text-black bg-teal-400 rounded-lg md:text-xl hover:bg-blue-400 focus:ring-4 focus:outline-none focus:ring-blue-300"
             onClick={() => window.open("https://medium.com/@sumontasaha80", "_blank")}
           >
             <FaMedium size={27} />

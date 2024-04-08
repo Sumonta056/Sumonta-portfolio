@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      screens:{
+      screens: {
         xs: "320px",
         sm: "375px",
         sml: "500px",
@@ -22,39 +22,40 @@ module.exports = {
         lightText: "#c4cfde",
         boxBg: "linear-gradient(145deg, #1e2024, #23272b)",
         designColor: "#ff014f",
-        teal2 : '#1eb2a6',
+        teal2: "#1eb2a6",
+        biolet: "#2e0249",
       },
       boxShadow: {
         shadowOne: "10px 10px 19px #1c1e22, -10px -10px 19px #262a2e",
       },
       keyframes: {
         updown: {
-          '0%': {
-            transform: 'translateY(-20px)',
+          "0%": {
+            transform: "translateY(-20px)",
           },
-          '50%': {
-            transform: 'translateY(20px)',
+          "50%": {
+            transform: "translateY(20px)",
           },
-          '100%': {
-            transform: 'translateY(-20px)',
+          "100%": {
+            transform: "translateY(-20px)",
           },
         },
 
         updownSmall: {
-          '0%': {
-            transform: 'translateY(-10px)',
+          "0%": {
+            transform: "translateY(-10px)",
           },
-          '50%': {
-            transform: 'translateY(10px)',
+          "50%": {
+            transform: "translateY(10px)",
           },
-          '100%': {
-            transform: 'translateY(-10px)',
+          "100%": {
+            transform: "translateY(-10px)",
           },
         },
       },
       animation: {
-        updown: 'updown 3s linear infinite',
-        updownS: 'updownSmall 3s linear infinite',
+        updown: "updown 3s linear infinite",
+        updownS: "updownSmall 3s linear infinite",
       },
       container: {
         center: true,

@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectsCard from "./ProjectsCard";
-import { Slide, Fade } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 import { FaRegLightbulb } from "react-icons/fa"; // Import the icon you want to use
 
 // Images Link
@@ -107,7 +107,7 @@ function App() {
     "Firebase",
     "Figma",
     "Academic",
-    "hackathon"
+    "hackathon",
   ]);
   const projectSkills7 = createSkillsArray(["Java", "Game", "Academic"]);
   const projectSkills8 = createSkillsArray(["C", "Game", "Academic"]);
@@ -119,15 +119,11 @@ function App() {
     "express",
     "Academic",
   ]);
-  const projectSkills10 = createSkillsArray([
-    "Javascript",
-    "CSS",
-    "Academic",
-  ]);
+  const projectSkills10 = createSkillsArray(["Javascript", "CSS", "Academic"]);
 
   return (
     <div className="flex flex-col items-center justify-center w-full h-full gap-8 px-4 py-2 text-lightText">
-      <Fade delay={420} direction="up">
+      <Fade delay={420} direction="left" direction="up">
         <div className="relative flex items-center gap-2 mt-4 text-4xl font-bold text-center text-gray-200 md:mt-5 md:text-6xl">
           <FaRegLightbulb className="text-yellow-400 animate-pulse" />
           <h1>Projects</h1>
@@ -135,7 +131,7 @@ function App() {
       </Fade>
       <div className="w-2/3 h-1 -mt-4 bg-gray-200 md:mb-3 animate-pulse md:w-1/2 md:-mt-1"></div>
 
-      <Slide delay={420}>
+      <Fade delay={420} direction="left">
         <ProjectsCard
           image={Project4}
           projectName="🛺 SUST Autorickshaw System 🛺"
@@ -152,9 +148,9 @@ function App() {
           }
           skills={projectSkills4}
         />
-      </Slide>
+      </Fade>
 
-      <Slide delay={420}>
+      <Fade delay={420} direction="left">
         <ProjectsCard
           image={Project5}
           projectName="🗑️ Eco-Sync : Waste Management 🗑️"
@@ -171,9 +167,9 @@ function App() {
           }
           skills={projectSkills5}
         />
-      </Slide>
+      </Fade>
 
-      <Slide delay={420}>
+      <Fade delay={420} direction="left">
         <ProjectsCard
           image={Project6}
           projectName="📱 RENT IT 📱"
@@ -186,9 +182,9 @@ function App() {
           }
           skills={projectSkills6}
         />
-      </Slide>
+      </Fade>
 
-      <Slide delay={420}>
+      <Fade delay={420} direction="left">
         <ProjectsCard
           image={Project2}
           projectName="☁️ Atoms-Sense ☁️"
@@ -205,9 +201,9 @@ function App() {
           }
           skills={projectSkills2}
         />
-      </Slide>
+      </Fade>
 
-      <Slide delay={420}>
+      <Fade delay={420} direction="left">
         <ProjectsCard
           image={Project3}
           projectName="👶 KIDDO 👶"
@@ -224,9 +220,9 @@ function App() {
           }
           skills={projectSkills3}
         />
-      </Slide>
+      </Fade>
 
-      <Slide delay={420}>
+      <Fade delay={420} direction="left">
         <ProjectsCard
           image={Project7}
           projectName="📸 Mri-Shot 📸"
@@ -237,9 +233,9 @@ function App() {
           demo={() => handleButtonClick("https://mri-shot.vercel.app/")}
           skills={projectSkills1}
         />
-      </Slide>
+      </Fade>
 
-      <Slide delay={420}>
+      <Fade delay={420} direction="left">
         <ProjectsCard
           image={Project1}
           projectName="🧐 React Simplify Template 🧐"
@@ -250,9 +246,9 @@ function App() {
           demo={() => handleButtonClick("https://kiddo.vercel.app/")}
           skills={projectSkills1}
         />
-      </Slide>
+      </Fade>
 
-      <Slide delay={420}>
+      <Fade delay={420} direction="left">
         <ProjectsCard
           image={Project8}
           projectName="🏃‍♀️ Survive IT Game 🏃‍♀️"
@@ -265,9 +261,9 @@ function App() {
           }
           skills={projectSkills7}
         />
-      </Slide>
+      </Fade>
 
-      <Slide delay={420}>
+      <Fade delay={420} direction="left">
         <ProjectsCard
           image={Project9}
           projectName="🥷 Survival of Warrior 🥷"
@@ -284,9 +280,9 @@ function App() {
           }
           skills={projectSkills8}
         />
-      </Slide>
+      </Fade>
 
-      <Slide delay={420}>
+      <Fade delay={420} direction="left">
         <ProjectsCard
           image={Project10}
           projectName="📝 Task-Mate 📝"
@@ -299,24 +295,24 @@ function App() {
           }
           skills={projectSkills9}
         />
-      </Slide>
+      </Fade>
 
-      <Slide delay={420}>
+      <Fade delay={420} direction="left">
         <ProjectsCard
           image={Project13}
           projectName="🦾 Personal Portfolio 🦾"
           date="Jan 4, 2023 - Jul 30, 2023"
           github={() =>
-            handleButtonClick("https://github.com/Sumonta056/sumonta056.github.io")
+            handleButtonClick(
+              "https://github.com/Sumonta056/sumonta056.github.io"
+            )
           }
-          demo={() =>
-            handleButtonClick("https://sumonta056.github.io/")
-          }
+          demo={() => handleButtonClick("https://sumonta056.github.io/")}
           skills={projectSkills10}
         />
-      </Slide>
+      </Fade>
 
-      <Slide delay={420}>
+      <Fade delay={420} direction="left">
         <ProjectsCard
           image={Project11}
           projectName="👁️ DALL·E ভিশন 👁️"
@@ -329,9 +325,9 @@ function App() {
           }
           skills={projectSkills1}
         />
-      </Slide>
+      </Fade>
 
-      <Slide delay={420}>
+      <Fade delay={420} direction="left">
         <ProjectsCard
           image={Project12}
           projectName="❓ GPT-Vai ❓"
@@ -344,7 +340,7 @@ function App() {
           }
           skills={projectSkills1}
         />
-      </Slide>
+      </Fade>
     </div>
   );
 }

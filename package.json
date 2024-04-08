@@ -37,6 +37,7 @@
     "semantic-ui-react": "^2.1.5",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.5",
+    "swiper": "^11.0.5",
     "tsparticles": "^3.3.0"
   },
   "scripts": {

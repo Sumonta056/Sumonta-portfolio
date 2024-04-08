@@ -66,9 +66,17 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
               </Link>
             </li>
             <li>
-              <a className="menu-item" href="https://mri-shot.vercel.app/">
+              <Link
+                activeClass="active"
+                className="menu-item"
+                to="photo"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={800}
+              >
                 Photography
-              </a>
+              </Link>
             </li>
             <li>
               <Link
