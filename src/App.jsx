@@ -1,4 +1,5 @@
-import React, { lazy, Suspense } from "react";
+import { lazy, Suspense } from "react";
+import React from "react";
 import { CircularProgress } from "@material-ui/core";
 import { TinyButton as ScrollUpButton } from "react-scroll-up-button";
 import ScrollProgressBar from "react-scroll-progress-bar";
@@ -10,6 +11,7 @@ const Achievement = lazy(() => import("./components/Achivement/Index.jsx"));
 const Blog = lazy(() => import("./components/blog/Blog.jsx"));
 const About = lazy(() => import("./components/about/About.jsx"));
 const Footer = lazy(() => import("./components/common/footer/Footer.jsx"));
+const Contact = lazy(() => import("./components/ContactMe/index.jsx"));
 
 function App() {
   return (
@@ -34,6 +36,10 @@ function App() {
 
       <div id="blog">
         <Blog />
+      </div>
+
+      <div id="contact">
+        <Contact />
       </div>
 
       <Footer />

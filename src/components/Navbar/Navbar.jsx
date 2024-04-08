@@ -94,13 +94,20 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <a className="menu-item" href="#valid">
+              <Link
+                activeClass="active"
+                className="menu-item"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={800}
+              >
                 Contact Me
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="Nav-center-2">
-            {" "}
             <button
               className="contact-btn animate-pulse"
               onClick={handleButtonClick}

@@ -84,9 +84,17 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
               </Link>
             </li>
             <li>
-              <a className="menu-item" href="#valid">
+              <Link
+                activeClass="active"
+                className="menu-item"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={800}
+              >
                 Contact Me
-              </a>
+              </Link>
             </li>
 
             <button className="contact-btn" onClick={handleButtonClick}>
