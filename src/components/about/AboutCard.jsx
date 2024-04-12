@@ -22,7 +22,7 @@ const AboutCard = () => {
                 title="Software Engineer"
               />
             </Fade>
-            <div className="mt-5">
+            <div className="gap-2 mt-5 ">
               {homeAbout.map((val) => {
                 return (
                   <Slide direction="up">

@@ -45,6 +45,12 @@ export const homeAbout = [
     title: "Blogger and Photographer",
     desc: "Occasionally write blogs on software-related topics on Medium and do casual photography.",
   },
+  {
+    id: 5,
+    cover: <FaCamera size={60} />,
+    title: "Open Source Contributor Enthusiast",
+    desc: "Interested in creating projects and occasionally contributing to open-source projects on GitHub.",
+  },
 ];
 
 export const awrapper = [
