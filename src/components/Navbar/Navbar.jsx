@@ -30,7 +30,7 @@ const Navbar = () => {
             onClick={handleButtonClick1}
           >
             @
-            <span className="text-sm font-normal text-white md:text-xl ">
+            <span className="text-sm font-normal text-white lgl:text-xl">
               Sumonta056
             </span>
           </h1>

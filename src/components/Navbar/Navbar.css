@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Josefin+Sans:wght@100;300;400;600;700&family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Josefin+Sans:wght@100;300;400;600;700&family=Poppins:wght@500&display=swap");
 
-*{
-  font-family: 'Poppins', sans-serif;
+* {
+  font-family: "Poppins", sans-serif;
 }
 
 .nav-wrapper {
@@ -33,17 +33,15 @@
   margin: 0 1.5rem;
 }
 
-
 .Nav-center-2 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
 .menu-item {
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   font-weight: 500;
   color: #fff;
@@ -55,7 +53,7 @@
   content: "";
   width: 2rem;
   height: 0.2rem;
-  background: linear-gradient(90deg, #f8c040 0%, #F7BE38 100%);
+  background: linear-gradient(90deg, #f8c040 0%, #f7be38 100%);
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
@@ -94,7 +92,7 @@
   justify-content: center;
   align-items: center;
   color: #000000;
-  background: linear-gradient(90deg, #f8c040 0%, #F7BE38 100%);
+  background: linear-gradient(90deg, #f8c040 0%, #f7be38 100%);
   padding: 0.6rem 1.2rem;
   border: none;
   outline: 1.5px solid transparent;
@@ -110,7 +108,6 @@
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
 }
-
 
 .contact-btn:hover {
   background: #42c1e0;
@@ -129,7 +126,7 @@
   -ms-border-radius: 0.4rem;
   -o-border-radius: 0.4rem;
   color: #1d1c1c;
-  background: linear-gradient(90deg, #fac448 -0.13%, #F7BE38 99.8%);
+  background: linear-gradient(90deg, #fac448 -0.13%, #f7be38 99.8%);
   line-height: 0;
   cursor: pointer;
   transition: all 0.4s ease;
@@ -140,10 +137,7 @@
   display: none;
 }
 
-
-
 @media (max-width: 769px) {
-
   .menu-btn {
     display: block;
   }
@@ -152,7 +146,7 @@
     display: none;
   }
 
-  .Nav-center-2{
+  .Nav-center-2 {
     display: none;
   }
 
@@ -160,11 +154,8 @@
     padding: 1 1.3rem;
   }
 }
-
-
 
 @media (max-width: 1025px) {
-
   .menu-btn {
     display: block;
   }
@@ -173,7 +164,7 @@
     display: none;
   }
 
-  .Nav-center-2{
+  .Nav-center-2 {
     display: none;
   }
 
@@ -182,10 +173,18 @@
   }
 }
 
+@media (max-width: 1280px) {
+  .nav-content {
+    padding: 1 .3rem;
+  }
+
+  .menu-item{
+    font-size: .8rem;
+  }
+}
 
 @media (max-width: 1325px) {
   .nav-wrapper {
     padding: 0 2rem;
   }
-
 }

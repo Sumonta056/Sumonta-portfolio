@@ -16,6 +16,9 @@ import Blog3 from "./blog/assets/blog-3.webp";
 import Blog4 from "./blog/assets/blog-4.webp";
 import Blog5 from "./blog/assets/blog-5.webp";
 import Blog6 from "./blog/assets/blog-6.webp";
+import Blog7 from "./blog/assets/blog-7.png";
+import Blog8 from "./blog/assets/blog-8.webp";
+import Blog9 from "./blog/assets/blog-9.webp";
 
 export const homeAbout = [
   {
@@ -150,5 +153,37 @@ export const blog = [
     desc: "I recently took part in the Brain Station 23 Hackathon at the Orbitax SUST SWE Technovent 2023, powered by DSi",
     cover: Blog6,
     link: "https://medium.com/p/945063ae8e66",
+  },
+  {
+    id: 7,
+    type: "20 Claps",
+    date: "FEB, 2024",
+    com: "392 Views",
+    title: "17 VS Code Extensions for Enhanced Productivity Work",
+    desc: "Enhance Your Coding Journey: 17 VS Code Extensions for Enhanced Time Savings and Productivity.",
+    cover: Blog7,
+    link: "https://dev.to/sumonta056/enhance-your-coding-journey-17-must-try-vs-code-extensions-for-enhanced-productivity-and-time-savings-3lo1",
+  },
+
+  {
+    id: 7,
+    type: "151 Claps",
+    date: "JUN, 2023",
+    com: "291 Views",
+    title: "The Art of Refactoring and Code Smell Removal",
+    desc: "Code Smell refers to certain patterns in code that indicate implementation or potential design issues.",
+    cover: Blog8,
+    link: "https://medium.com/p/b73882918511",
+  },
+
+  {
+    id: 7,
+    type: "100 Claps",
+    date: "Aug, 2023",
+    com: "188 Views",
+    title: "Mastering Project Showcase Competition: Key Tips",
+    desc: "In the exciting world of new ideas and creativity, joining a competition can be a thrilling and Learning journey.",
+    cover: Blog9,
+    link: "https://medium.com/p/aec1b7c724de",
   },
 ];

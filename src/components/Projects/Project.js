@@ -16,7 +16,9 @@ import Project9 from "./assets/project9.jpg";
 import Project10 from "./assets/project10.jpg";
 import Project11 from "./assets/project11.jpg";
 import Project12 from "./assets/project12.jpg";
-import Project13 from "./assets/project15.png";
+import Project13 from "./assets/project15.jpg";
+import Project14 from "./assets/project14.jpg";
+import Project15 from "./assets/project16.jpg";
 // Images Link
 
 // SKills Link
@@ -38,6 +40,9 @@ import CSS from "./Skills/CSS";
 import Game from "./Skills/Game";
 import C from "./Skills/C";
 import Javascript from "./Skills/Javascript";
+import Python from "./Skills/Python";
+import Workflow from "./Skills/Workflow";
+import Github from "./Skills/Github";
 // SKills Link
 
 function App() {
@@ -63,6 +68,9 @@ function App() {
     Game: <Game key="Game" />,
     C: <C key="C" />,
     Javascript: <Javascript key="Javascript" />,
+    Python: <Python key="Python" />,
+    Workflow: <Workflow key="Workflow" />,
+    Github: <Github key="Github" />,
   };
 
   function createSkillsArray(skillsList) {
@@ -120,10 +128,16 @@ function App() {
     "Academic",
   ]);
   const projectSkills10 = createSkillsArray(["Javascript", "CSS", "Academic"]);
+  const projectSkills11 = createSkillsArray([
+    "Python",
+    "Workflow",
+    "Javascript",
+  ]);
+  const projectSkills12 = createSkillsArray(["Python", "Github"]);
 
   return (
     <div className="flex flex-col items-center justify-center w-full h-full gap-8 px-4 py-2 text-lightText">
-      <Fade delay={420} direction="left" direction="up">
+      <Fade delay={420} direction="left">
         <div className="relative flex items-center gap-2 mt-4 text-4xl font-bold text-center text-gray-200 md:mt-5 md:text-6xl">
           <FaRegLightbulb className="text-yellow-400 animate-pulse" />
           <h1>Projects</h1>
@@ -219,6 +233,25 @@ function App() {
             )
           }
           skills={projectSkills3}
+        />
+      </Fade>
+
+      <Fade delay={420} direction="left">
+        <ProjectsCard
+          image={Project14}
+          projectName="🤖 GitHub Follower Notification Bot 🤖"
+          date="Jan 20, 2024 - Feb 20, 2024"
+          github={() =>
+            handleButtonClick(
+              "https://github.com/Sumonta056/GitHub-Follower-Notification-Action-Bot"
+            )
+          }
+          demo={() =>
+            handleButtonClick(
+              "https://github.com/Sumonta056/GitHub-Follower-Notification-Action-Bot"
+            )
+          }
+          skills={projectSkills11}
         />
       </Fade>
 
@@ -339,6 +372,21 @@ function App() {
             handleButtonClick("https://github.com/Sumonta056/GPT-Vai")
           }
           skills={projectSkills1}
+        />
+      </Fade>
+
+      <Fade delay={420} direction="left">
+        <ProjectsCard
+          image={Project15}
+          projectName="✍🏻 GitHub Tutorial ✍🏻"
+          date="Jan 20, 2023 - Dec 20, 2023"
+          github={() =>
+            handleButtonClick("https://github.com/Sumonta056/GitHub-Tutorial")
+          }
+          demo={() =>
+            handleButtonClick("https://github.com/Sumonta056/GitHub-Tutorial")
+          }
+          skills={projectSkills12}
         />
       </Fade>
     </div>

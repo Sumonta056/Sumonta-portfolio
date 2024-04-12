@@ -10,13 +10,14 @@ import roadmap9 from "./assets/ach9.jpg";
 import roadmap10 from "./assets/ach10.jpg";
 import roadmap11 from "./assets/ach12.jpg";
 import roadmap12 from "./assets/ach13.jpg";
+import roadmap13 from "./assets/ach14.jpg";
 
 export const roadmap = [
   {
     id: "0",
     title:
       " 1st Runners-up in Project Showcasing Category in IEEE Branch Fest, BUP - 2023",
-    text: "Secured 2nd Postition among 60+ teams, competing against hardware projects with our software-only entry.",
+    text: "Secured 2nd Position among 60+ teams, competing against hardware projects with our software-only entry.",
     date: "May 2023",
     status: "done",
     imageUrl: roadmap1,
@@ -67,7 +68,7 @@ export const roadmap = [
   {
     id: "5",
     title: "বিহঙ্গ - Intra Sylhet Photography Exhibition",
-    text: "My Photo got selected for বিহঙ্গ - Intra Sylhet Photography Exhibition organised by Sylhet Engineering College Photographers' Association.",
+    text: "My Photo got selected for বিহঙ্গ - Intra Sylhet Photography Exhibition organized by Sylhet Engineering College Photographers' Association.",
     date: "May 2023",
     status: "progress",
     imageUrl: roadmap7,
@@ -75,7 +76,7 @@ export const roadmap = [
   {
     id: "5",
     title: "SUST Exceed Manifestation - Photo Exhibition",
-    text: "My Photo got selected for SUST Exceed Manifestation (Photo exhibition) organised by Department of Civil and Environmental Engineering, SUST.",
+    text: "My Photo got selected for SUST Exceed Manifestation (Photo exhibition) organized by Department of Civil and Environmental Engineering, SUST.",
     date: "May 2023",
     status: "progress",
     imageUrl: roadmap8,
@@ -99,15 +100,24 @@ export const roadmap = [
   },
   {
     id: "5",
+    title: "Open Source Contribution : Hacktoberfest 2023 Participation Badges",
+    text: "Passed All Four Level of Hacktoberfest. Contributed to and successfully merged pull requests in four open-source projects listed by Hacktoberfest.",
+    date: "May 2023",
+    status: "progress",
+    imageUrl: roadmap13,
+  },
+  {
+    id: "5",
     title: "CGPA 4.00/4.00 in 6th Semester in Software Engineering, SUST",
-    text:  "Achieved a perfect CGPA of 4.00/4.00 in the 6th semester of my Software Engineering program, demonstrating academic excellence and dedication to my studies.",
+    text: "Achieved a perfect CGPA of 4.00/4.00 in the 6th semester of my Software Engineering program, demonstrating academic excellence and dedication to my studies.",
     date: "May 2023",
     status: "progress",
     imageUrl: roadmap11,
   },
   {
     id: "5",
-    title: "2nd Price in Intra School Poster Presentation Competition, May 2015",
+    title:
+      "2nd Price in Intra School Poster Presentation Competition, May 2015",
     text: "Won 2nd price in Intra School Dewalika Competition host by Narayanganj Ideal School Theme was Pohela Boishak and Bangla Culture.",
     date: "May 2023",
     status: "progress",
