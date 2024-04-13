@@ -47,7 +47,7 @@ export const homeAbout = [
   },
   {
     id: 5,
-    cover: <FaCamera size={60} />,
+    cover: <FaGithub size={60} />,
     title: "Open Source Contributor Enthusiast",
     desc: "Interested in creating projects and occasionally contributing to open-source projects on GitHub.",
   },
