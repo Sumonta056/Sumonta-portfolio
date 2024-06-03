@@ -2,7 +2,7 @@ import roadmap1 from "./assets/ach1.jpg";
 import roadmap2 from "./assets/ach2.jpg";
 import roadmap3 from "./assets/ach3.jpg";
 import roadmap4 from "./assets/ach4.jpg";
-import roadmap5 from "./assets/ach6.jpg";
+import roadmap5 from "./assets/ach15.jpeg";
 import roadmap6 from "./assets/ach11.png";
 import roadmap7 from "./assets/ach7.jpg";
 import roadmap8 from "./assets/ach8.jpg";
@@ -83,8 +83,8 @@ export const roadmap = [
   },
   {
     id: "5",
-    title: "Top 50 in Code Samurai Hackathon 24, Dhaka University - 2024",
-    text: "Ranked among the top 50 out of 400+ teams in the Code Samurai Hackathon 2024 Hosted By Dhaka University.",
+    title: "2nd in Preliminary Round 2 (Finalist), Top 45 in Code Samurai Hackathon 2024",
+    text: "Achieved 2nd position in Preliminary Round 2, securing final top 45 out of 400 teams, with a score of 89/100.",
     date: "May 2023",
     status: "progress",
     imageUrl: roadmap5,
